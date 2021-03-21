@@ -11,3 +11,4 @@ services:
         volumes:
           - /tmp/.X11-unix:/tmp/.X11-unix
           - ~/.Xauthority:/root/.Xauthority
+          - "/home:/home"
