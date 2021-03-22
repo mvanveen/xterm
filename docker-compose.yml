@@ -9,6 +9,7 @@ services:
           GID: $GID
         user: "${UID}:${GID}"
         volumes:
+          - $HOME/.ssh:/root/.ssh
           - /tmp/.X11-unix:/tmp/.X11-unix
           - ~/.Xauthority:/root/.Xauthority
           - "/home:/home"
