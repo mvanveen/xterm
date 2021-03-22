@@ -5,9 +5,6 @@ services:
         build: .
         environment:
           DISPLAY: $DISPLAY
-          UID: $UID
-          GID: $GID
-        user: "${UID}:${GID}"
         volumes:
           - /tmp/.X11-unix:/tmp/.X11-unix
           - ~/.Xauthority:/root/.Xauthority
