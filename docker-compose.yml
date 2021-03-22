@@ -6,6 +6,7 @@ services:
         environment:
           DISPLAY: $DISPLAY
         volumes:
+          - $HOME/.ssh:/root/.ssh
           - /tmp/.X11-unix:/tmp/.X11-unix
           - ~/.Xauthority:/root/.Xauthority
           - "/home:/home"
